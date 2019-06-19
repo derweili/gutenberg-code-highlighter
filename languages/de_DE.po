@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Generator: Poedit 2.2.1\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: plugins/01-content-templates-sidebar/index.js:123
+msgid "No Templates Found"
+msgstr "Es wurden keine Templates gefunden."
+
+#: plugins/01-content-templates-sidebar/index.js:124
+msgid "You don't have any Templates"
+msgstr "Du hast bisher keine Templates erstellt."
+
+#: plugins/01-content-templates-sidebar/index.js:125
+msgid "Please create a new Template first."
+msgstr "Bitte erstelle zuerst ein neues Template."
+
+#: plugins/01-content-templates-sidebar/index.js:141
+msgid "Content Templates"
+msgstr "Content Templates"
+
+#: plugins/01-content-templates-sidebar/index.js:143
+msgid "Select a Template"
+msgstr "Template auswählen"
