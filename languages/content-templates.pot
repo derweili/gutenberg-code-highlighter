@@ -3,6 +3,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
-#: filters/code-block/index.js:61
+#: filters/code-block/index.js:74
 msgid "Language"
 msgstr ""

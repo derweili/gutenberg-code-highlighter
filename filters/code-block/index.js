@@ -5,8 +5,12 @@ const { Fragment } = wp.element;
 const { InspectorControls } = wp.blockEditor;
 const { PanelBody, PanelRow, RadioControl } = wp.components;
 
+import Highlight from 'react-highlight.js'
+
+
 import classnames from "classnames";
 import "./editor.scss";
+import "./style.scss";
 
 addFilter(
     "blocks.registerBlockType",
@@ -27,7 +31,7 @@ function addCodeAttributes( settings, name ){
     if("core/code" !== name ) return settings;
 
     settings.supports = lodash.merge({}, settings.supports, {
-        align: ["full", "wide"]
+        align: ["full"]
     });
 
     settings.attributes.align = {
@@ -53,8 +57,17 @@ function addCodeInspectorControls( BlockEdit ) {
     const withInspectorControls =  createHigherOrderComponent( BlockEdit => {
         
         return props => {
-            
+            console.log(props);
             if( "core/code" !== props.name ) return <BlockEdit {...props} />;
+
+            if( !props.isSelected){
+                return (
+                    <Highlight language={props.attributes.language}>
+                        {props.attributes.content}
+                    </Highlight>
+                );
+            }
+
             return (
                 <Fragment>
                     <InspectorControls>
@@ -71,7 +84,8 @@ function addCodeInspectorControls( BlockEdit ) {
                                     { label: 'JavaScript ES6', value: 'es6' },
                                     { label: 'HTML', value: 'html' },
                                     { label: 'CSS', value: 'css' },
-                                    { label: 'SASS', value: 'sass' }
+                                    { label: 'SASS', value: 'sass' },
+                                    { label: 'SCSS', value: 'scss' }
                                 ] }
                                 onChange={ ( language ) => { props.setAttributes( {language} ) } }
                             />

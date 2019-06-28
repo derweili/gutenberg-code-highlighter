@@ -93,7 +93,7 @@ function frontend_assets(){
 	wp_enqueue_script( 
 		"gutenberg-code-highlighter-frontend",
 		_get_plugin_url() . $frontend_js_path,
-		$js_dependencies,
+		[ 'wp-element'],
 		filemtime( _get_plugin_directory() . $frontend_js_path ),
 		true
 	);

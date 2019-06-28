@@ -59,3 +59,6 @@ function _get_plugin_url() {
 
 // Enqueue JS and CSS
 include __DIR__ . '/lib/register-scripts.php';
+
+// PHP block filters
+include __DIR__ . '/lib/block-filters.php';
