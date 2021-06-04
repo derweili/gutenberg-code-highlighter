@@ -1,0 +1,14 @@
+{
+    "name": "derweili/gutenberg-code-highlighter",
+    "description": "Code Highlighter Plugin for Gutenberg",
+    "type": "wordpress-plugin",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "derweili",
+            "email": "jw@derweili.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
